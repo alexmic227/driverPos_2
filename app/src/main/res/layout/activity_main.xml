@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".Controller.MainActivity">
+
+    <TextView
+        android:id="@+id/scr01_CustName"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/purple_500"
+        android:fontFamily="@font/muli_bold"
+        android:text="Customer:"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/scr01_Logo"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/scr01_CustName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/truck" />
+
+    <EditText
+        android:id="@+id/scr_01_Search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:ems="12"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="Search"
+        app:layout_constraintTop_toBottomOf="@+id/scr_01_Print_Btn" />
+
+    <Button
+        android:id="@+id/scr_01_find_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scr_01_Search_text" />
+
+    <Button
+        android:id="@+id/scr_01_prev_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/scr_01_prev_Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scr_01_find_Btn" />
+
+    <Button
+        android:id="@+id/scr_01_next_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/scr_01_next_Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scr_01_prev_Btn" />
+
+    <Button
+        android:id="@+id/scr_01_Qty_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/Qty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scr01_CustName" />
+
+    <Button
+        android:id="@+id/scr_01_Print_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="#9C27B0"
+        android:text="@string/scr_01_Print_Btn"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scr_01_Qty_Btn" />
+
+    <TextView
+        android:id="@+id/scr_01_DistName"
+        android:layout_width="374dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Customer"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scr01_CustName" />
+
+    <EditText
+        android:id="@+id/scr_01_Qty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="@string/Qty_text"
+        android:importantForAutofill="no"
+        android:labelFor="@id/scr_01_Qty_Btn"
+        android:text="@string/Qty_text"
+        app:layout_constraintStart_toEndOf="@+id/scr_01_Qty_Btn"
+        app:layout_constraintTop_toTopOf="@+id/scr01_CustName" />
+
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Administration"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scr_01_prev_Btn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DriverPos</string>
+    <string name="customer_name">Customer Name:</string>
+    <string name="logo">logo</string>
+    <string name="scr_01_Print_Btn">Print Delivery Note</string>
+    <string name="scr_01_next_Btn">Next</string>
+    <string name="scr_01_prev_Btn">Previous</string>
+    <string name="Qty">Add Qty in Litres:</string>
+    <string name="Print">Print</string>
+    <string name="DistName">Dist Name </string>
+    <string name="Qty_text"> </string>
+
+    <string name="scr01_Admin_Btn">Administration </string>
+    <string name="scr02_DistName">Dist Name: </string>
+    <string name="scr02_DistAddr">Address: </string>
+    <string name="scr02_Order">Order: </string>
+    <string name="scr02_DistNamePtx"> </string>
+    <string name="scr02_DistOrderPtx"> </string>
+    <string name="scr02_DistAddressPtx"> </string>
+    <string name="scr_02_PrintBtn">Print</string>
+    <string name="scr_02_MainBtn">Main</string>
+
+    <string name="scr04_Save_Btn">Save</string>
+    <string name="scr04_View_Btn">View</string>
+    <string name="scr04_fName_txt">File Name: </string>
+    <string name="scr04_Data_Btn">Data</string>
+    <string name="textview">TextView</string>
+    <string name="scr04_Main_Btn">Main</string>
+    <string name="scr04_Editfile">Filename</string>
+    <string name="file_name">file name</string>
+    <string name="data">data</string>
+    <string name="title_activity_write_to">writeTo</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="scr05_Save_Btn">Save</string>
+    <string name="scr05_Main_Btn">Back to Main</string>
+
+
+</resources>
